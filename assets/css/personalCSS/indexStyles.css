@@ -1,0 +1,31 @@
+/*
+#687864 Dark green
+#31708E Dark blue
+#5085A5 Greyish blue
+#8FC1E3 Lighter blue
+#F7F9FB Almost white
+
+https://visme.co/blog/website-color-schemes/
+*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #8FC1E3;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #F7F9FB;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+
+  .navbar a:hover {
+    background: #31708E;
+    color: black;
+  }
