@@ -5,21 +5,47 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anshul Bharath</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/personalCSS/indexStyles.css">
   </head>
 <body>
 
-    <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="fun.html">Something Fun</a>
-    </div>
+  <div class="navbar show-for-large">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="fun.html">Something Fun</a>
+  </div>
+  
+  <div class="hide-for-large">
+  <button type="button" class="button hollow" data-toggle="offCanvas">Menu</button>
+  <div class="off-canvas position-left offCanvasNav" id="offCanvas" data-off-canvas data-transition="overlap">
+    <!-- Close button -->
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <!-- Menu -->
+    <ul class="vertical menu offCanvasNavLink">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="fun.html">For fun!</a></li>
+    </ul>
+  </div>
+  </div>
+  <div class="off-canvas-content show-for-large" data-off-canvas-content>
+    <!-- Main page content-->
+  </div>
+  
 
 
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor.js"></script>
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/foundation.js"></script>
+<script type="application/javascript">
+  $(document).foundation();
+</script>
 </body>
 </html>

@@ -24,9 +24,27 @@ https://visme.co/blog/website-color-schemes/
     padding: 14px 16px;
     text-decoration: none;
   }
+
+  .offCanvasNav {
+    background-color: #8FC1E3;
+  }
+
+  .offCanvasNavLink a{
+    color: #F7F9FB;
+    text-align: center;
+  }
   
 
   .navbar a:hover {
     background: #31708E;
     color: black;
+  }
+
+  .main {
+    margin-top: 5em; 
+  }
+
+  .resumeHeader {
+    text-align: center;
+    line-height: 1.5;
   }
