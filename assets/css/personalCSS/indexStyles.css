@@ -63,8 +63,8 @@ https://visme.co/blog/website-color-schemes/
 
   .headshot {
     padding: 30px 30px;
-    width: 30em;
-    height: 30em;
+    max-width: 100%;
+    height: auto;
   }
 
   .main {
