@@ -11,8 +11,6 @@ https://visme.co/blog/website-color-schemes/
 .navbar {
     overflow: hidden;
     background-color: #8FC1E3;
-    position: fixed; 
-    top: 0; 
     width: 100%; 
   }
 
@@ -22,7 +20,30 @@ https://visme.co/blog/website-color-schemes/
     color: #F7F9FB;
     text-align: center;
     padding: 14px 16px;
+    font-weight: bold;
+    font-size: xx-large;
     text-decoration: none;
+  }
+
+  .navLogo {
+    float:inline-end;
+  }
+
+  .headerBackground {
+    background-color: #8FC1E3;
+  }
+
+  .offCanvasButton {
+    position: relative;
+    float: right;
+  }
+
+  /*Taken from W3 schools*/
+  .centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 
   .offCanvasNav {
@@ -38,6 +59,12 @@ https://visme.co/blog/website-color-schemes/
   .navbar a:hover {
     background: #31708E;
     color: black;
+  }
+
+  .headshot {
+    padding: 30px 30px;
+    width: 30em;
+    height: 30em;
   }
 
   .main {

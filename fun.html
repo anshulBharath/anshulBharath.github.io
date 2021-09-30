@@ -10,15 +10,49 @@
   </head>
 <body>
 
-    <div class="navbar">
+  <div class="grid-x">
+    <div class="cell large-6 show-for-large navbar">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="resume.html">Resume</a>
-      <a href="fun.html">Something Fun</a>
+      <a href="fun.html">Something Fun</a>  
+    </div>
+    <div class="cell large-6 navLogo headerBackground">  
+      <img class="navLogo centerImage" src="assets/images/Logo2.png">
+    </div>
+  </div>
+  
+  <div class="hide-for-large">
+  <button type="button" class="button hollow offCanvasButton" data-toggle="offCanvas">Menu</button>
+  <div class="off-canvas position-right offCanvasNav" id="offCanvas" data-off-canvas data-transition="overlap">
+    <!-- Close button -->
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <!-- Menu -->
+    <ul class="vertical menu offCanvasNavLink">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="fun.html">For fun!</a></li>
+    </ul>
+  </div>
+  </div>
+  <div class="off-canvas-content show-for-large" data-off-canvas-content>
+    <!-- Main page content-->
+    <div class="main grid-container">
+
     </div>
 
+  </div>
 
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor.js"></script>
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/foundation.js"></script>
+<script type="application/javascript">
+  $(document).foundation();
+</script>
 </body>
 </html>
