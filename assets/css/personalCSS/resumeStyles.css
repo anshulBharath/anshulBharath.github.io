@@ -1,0 +1,19 @@
+
+.resumeSubjects {
+
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.workSubjects {
+    
+    font-weight: bold;
+}
+
+.resumeSubjectLines {
+    line-height: small;
+}
+
+.boldHeaders {
+    font-weight: bold;
+}
