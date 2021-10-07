@@ -4022,8 +4022,8 @@ a.thumbnail {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 20px;
-  height: 16px;
+  width: 35px;
+  height: 50px;
   cursor: pointer; }
   .menu-icon.dark::after {
     position: absolute;
@@ -4031,7 +4031,7 @@ a.thumbnail {
     left: 0;
     display: block;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background: #0a0a0a;
     -webkit-box-shadow: 0 7px 0 #0a0a0a, 0 14px 0 #0a0a0a;
             box-shadow: 0 7px 0 #0a0a0a, 0 14px 0 #0a0a0a;

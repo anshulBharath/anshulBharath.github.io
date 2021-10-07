@@ -33,6 +33,10 @@ https://visme.co/blog/website-color-schemes/
     background-color: #8FC1E3;
   }
 
+  .roundedImage {
+    border-radius: 50%;
+  }
+
   .offCanvasButton {
     position: relative;
     float: right;
@@ -78,4 +82,14 @@ https://visme.co/blog/website-color-schemes/
 
   .mainPictureStyle {
     padding: 15px;
+  }
+
+  .hamburgerButton{
+    position: relative;
+    top: 15px;
+    right: 12px;
+  }
+
+  .hamburgerCell {
+    background-color: #8FC1E3;
   }
