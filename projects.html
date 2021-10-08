@@ -10,20 +10,23 @@
   </head>
 <body>
 
-  <div class="grid-x">
+  <div class="grid-x" style="background-color:#5085A5">
     <div class="cell large-6 show-for-large navbar">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="resume.html">Resumé</a>
-      <a href="fun.html">Something Fun</a>  
+      <a href="fun.html">Fun</a>  
     </div>
-    <div class="cell large-6 navLogo headerBackground">  
+    <div class="cell large-6 small-11 navLogo headerBackground">  
       <img class="navLogo centerImage" src="assets/images/Logo2.png">
-    </div>
+    </div> 
+    <div class="hide-for-large small-1 hamburgerCell" style="position: relative">
+      <button type="button" class="menu-icon dark offCanvasButton hamburgerButton" data-toggle="offCanvas"></button>
+    </div>    
   </div>
   
   <div class="hide-for-large">
-  <button type="button" class="button hollow offCanvasButton" data-toggle="offCanvas">Menu</button>
+
   <div class="off-canvas position-right offCanvasNav" id="offCanvas" data-off-canvas data-transition="overlap">
     <!-- Close button -->
     <button class="close-button" aria-label="Close menu" type="button" data-close>
@@ -40,7 +43,7 @@
   </div>
   <div class="off-canvas-content" data-off-canvas-content>
     <!-- Main page content-->
-    <div class="main grid-container" style="background-color:#5085A5">
+    <div class="main grid-container" style="background-color:#efeff3">
       
 
       <div class="grid-x">

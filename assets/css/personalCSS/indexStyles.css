@@ -10,7 +10,7 @@ https://visme.co/blog/website-color-schemes/
 
 .navbar {
     overflow: hidden;
-    background-color: #8FC1E3;
+    background-color: #5085A5;
     width: 100%; 
   }
 
@@ -30,7 +30,7 @@ https://visme.co/blog/website-color-schemes/
   }
 
   .headerBackground {
-    background-color: #8FC1E3;
+    background-color: #5085A5;
   }
 
   .roundedImage {
@@ -51,7 +51,7 @@ https://visme.co/blog/website-color-schemes/
   }
 
   .offCanvasNav {
-    background-color: #8FC1E3;
+    background-color: #5085A5;
   }
 
   .offCanvasNavLink a{
@@ -61,7 +61,7 @@ https://visme.co/blog/website-color-schemes/
   
 
   .navbar a:hover {
-    background: #31708E;
+    background: #27404f;
     color: black;
   }
 
@@ -91,5 +91,9 @@ https://visme.co/blog/website-color-schemes/
   }
 
   .hamburgerCell {
-    background-color: #8FC1E3;
+    background-color: #5085A5;
+  }
+
+  .center {
+    text-align: center;
   }
