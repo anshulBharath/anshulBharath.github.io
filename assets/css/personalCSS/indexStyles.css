@@ -25,10 +25,6 @@ https://visme.co/blog/website-color-schemes/
     text-decoration: none;
   }
 
-  .navLogo {
-    float:inline-end;
-  }
-
   .headerBackground {
     background-color: #5085A5;
   }
@@ -44,10 +40,7 @@ https://visme.co/blog/website-color-schemes/
 
   /*Taken from W3 schools*/
   .centerImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    text-align: center;
   }
 
   .offCanvasNav {
