@@ -2410,6 +2410,13 @@ input, select, textarea {
 		}
 
 /* Image */
+	
+	.vid {
+		border: 0;
+		display: block;
+		position: relative;
+		margin-right: 60px;
+	}
 
 	.image {
 		border-radius: 5px;
@@ -2424,7 +2431,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 60%;
 		}
 
 			.image.left img, .image.right img {
