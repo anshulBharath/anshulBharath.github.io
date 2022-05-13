@@ -15,6 +15,18 @@ let mic;
 let micInputOn = false;
 let firstMicToggle = true;
 
+let openNavigation = false;
+
+let introDiv = document.getElementById('introDiv');
+
+let numElements = document.getElementById('numElements');
+numElements.innerText = '0';
+
+let curSelectedElement = 0
+let selectedElement = document.getElementById('selectedElement');
+selectedElement.innerText = curSelectedElement;
+
+
 function preload() {
 
     // Credit: The Infinite Dream by Droid Bishop 
@@ -70,6 +82,9 @@ function setup() {
 function keyPressed() {
     // Start and Stop program
     if(keyCode === 32){
+        introDiv.classList.toggle('fade');
+
+
         if (started === false) {
             loop();
             started = true;
@@ -131,7 +146,7 @@ function keyPressed() {
     if (keyCode === 70) {
         let fs = fullscreen();
         fullscreen(!fs);
-        setTimeout(setup, 2000);
+        setTimeout(setup, 50);
     }
 
     // P - Save an image of the current canvas
@@ -140,8 +155,13 @@ function keyPressed() {
     }
 
     // Ctrl - Enable screen capture
-    if (keyCode === 18) {
-
+    if (keyCode === 17) {
+        if(introDiv.style.display === "block") {
+            introDiv.style.display = 'none';
+        }
+        else {
+            introDiv.style.display = 'block';
+        }
     }
     
     // Enter - Start mic input to move objects
@@ -170,7 +190,15 @@ function keyPressed() {
 
     // Option - this opens the controls panel
     if(keyCode === 18) {
-        openNav()
+        openNavigation = !openNavigation;
+
+        if(openNavigation){
+            openNav()
+        }
+        else if(!openNavigation){
+            closeNav()
+        }
+
     }
 
     // Key 1
@@ -207,18 +235,50 @@ function keyPressed() {
         currentSong = 4;
         songs[currentSong].play();
     }
+
+    // ========= ARROW Controls ===========
+
+    // Ctrl + Up
+    // if(keyCode === 17 && keyCode === 38){
+    //     sp[selectedElement].
+    // }
+
+    // Right arrow
+    if(keyCode === 39) {
+        if(curSelectedElement < sp.length - 1){
+            curSelectedElement++;
+            selectedElement.innerText = curSelectedElement;
+        }
+    }
+
+    // Left arrow
+    if(keyCode === 37) {
+        if(curSelectedElement >= 0){
+            curSelectedElement--;
+            selectedElement.innerText = curSelectedElement;
+        }
+    }
     
 }
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-    document.getElementById("mySidenav").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.width = "350px";
+    document.getElementById("main").style.marginLeft = "350px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
 }
 
 function draw() {
+    //background(255, 255);
     background(0, 1);
+
     //console.log(micInputOn);
+    numElements.innerText = sp.length;
     
     for (let i = 0; i < num; i++) {
         push();
